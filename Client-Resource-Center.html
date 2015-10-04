@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from www.outsource.com/Client-Resource-Center by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Oct 2015 14:44:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAABV1RRGwYCXFlQAwc="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("index.html")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+    <title>Hire Freelancers and Find Freelance Jobs Today | Outsource.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Access the highest quality freelancers from around the world for free. Find top rated web developers, data analysts, social media specialists, web designers, graphic designers, researchers, app developers, software programmers and more.">
+    <meta name="keywords" content="" />
+    
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="functions/css/custom/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<!-- Font Awesome -->
+	<link href="functions/css/custom/font-awesome.min.css" rel="stylesheet">  
+
+	<!-- ionicons -->
+	<link href="functions/css/custom/ionicons.min.css" rel="stylesheet">
+	
+    <link href="functions/css/custom/bootstrap-slider.css" rel="stylesheet">
+    
+	<!-- Pace -->
+	<link href="functions/css/custom/pace.css" rel="stylesheet">
+
+  <link href="functions/css/custom/select2.css" rel="stylesheet">	
+   <link rel="stylesheet" href="../outsource.com/cache/css_style_1_client.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="functions/css/custom/parsley.css" type="text/css" media="screen" />
+
+<!-- client script -->
+<script  type="text/javascript">
+<!--
+var ILADMIN = "0";
+var ILBASE = "index.html";
+var DATETODAY = "2015-10-04";
+var IMAGEBASE = "https://outsource.com/images/default/";
+var SITEAPI = "live";
+var ILTOKEN = "cd74e67fdf303e37a661c0e82cfd25f3";
+var PAGEURL = "Client-Resource-Center.html";
+var DISTANCE = "0";
+var _user_info = {"userid":null,"username":null,"firstname":null,"lastname":null,"fullname":null,"date":"10\/04\/2015"};
+//-->
+</script>
+
+  <!-- Outsource -->
+	<link href="functions/css/custom/outsource-ver-2.css" rel="stylesheet">
+ 
+  </head>
+
+  <body class="overflow-hidden">
+	<!-- Overlay Div -->
+	<div id="overlay" style="display:none;">
+		<div class="overlay-inner">
+			<!--<i class="ion-looping" style="font-size: 32px;"></i>-->
+		</div> 
+	</div>
+     
+ 
+   
+      
+    
+	
+	     
+       <div class="wrapper preload md1-wrapper guest-visit">
+<div class="top-black-bar">
+  <div class="container"> <a href="login.html">Login</a> <span class="m-left-5 m-right-5">|</span> <a href="joinoption.html">Signup</a> </div>
+</div>
+<div class="top-nav model1">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headerNavbarCollapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index-2.html"><img src="img/remodel1/navigation/Navigation-Logo-147x40.png" alt=""></a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="headerNavbarCollapse"> 
+     <ul class="nav navbar-nav navbar-right">  
+                <li> <a href="how-it-works.html">
+          <div class="link-inner">
+            <div class="main-text">How it works</div>
+            <div class="sub-text">Get More Information</div>
+          </div>
+          </a> </li>
+        <li> <a href="join.html">
+          <div class="link-inner">
+            <div class="main-text">Find work</div>
+            <div class="sub-text">Search Projects</div>
+          </div>
+          </a> </li>
+        <li> <a href="post-job.html">
+          <div class="link-inner">
+            <div class="main-text">Post a job</div>
+            <div class="sub-text">Find Freelancers</div>
+          </div>
+          </a> </li>
+                         <li class="btn-link">
+          <button class="btn btn-main btn-md1 font-12-sm font-12-xs" onClick="window.location='join.html'">Become a Freelancer</button>
+        </li>
+              </ul>
+      
+      
+       </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- ./container --> 
+</div>
+
+      
+     
+    
+<div class="main-container  main-container md1-main-cont freelancer-help-centerlist">
+  <div class="section paddingT-30">
+    <div class="container">
+      <div class="header-text">Client FAQs</div>
+      <div class="row m-top-20">
+        <div class="col-md-8"> 
+          
+          <!--<div class="row m-bottom-30">
+                <div class="col-sm-10">
+                  <div class="input-icon-wrapper">
+                    <input type="text" class="form-control" placeholder="e.g. posting a job">
+                    <div class="input-icon">
+                      <a href="javascript:void(0)"><i class="fa fa-search"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>--><!-- ./row -->
+          
+          <div class="font-18 font-semi-bold m-top-20">Overview</div>
+          <div class="row m-top-20">
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li class="rcl"><a href="javascript:void(0)">What is Outsource.com?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How does Outsource.com work?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">Why should I use Outsource.com?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">What are the benefits of Outsource.com?</a></li>
+              </ul>
+            </div>
+            <!-- ./col -->
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li class="rcl"><a href="javascript:void(0)">How do I get started?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">Is Outsource.com available on mobile?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How do I contact customer service?</a></li>
+              </ul>
+            </div>
+            <!-- ./col --> 
+          </div>
+          <!-- .row -->
+          
+          <hr class="m-top-35 m-bottom-30">
+          <div class="font-16 font-semi-bold m-top-20">Posting a Job / Hiring</div>
+          <div class="row m-top-20">
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li class="rcl"><a href="javascript:void(0)">How much does it cost?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">What kind of work can I get completed? </a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">Are top-skilled freelancers available?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How do I select the best freelancers?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">What if I cannot find the freelancer I need?</a></li>
+                <!--<li class="m-top-20 rcl"><a href="javascript:void(0)">How do I hire freelancers?</a></li>-->
+              </ul>
+            </div>
+            <!-- ./col -->
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li class="rcl"><a href="javascript:void(0)">What if my freelancer is not working out?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How do I write a quality job post?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How does the hiring process work?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">What happens when the freelancer accepts an offer?</a></li>
+                <!--<li class="m-top-20 rcl"><a href="javascript:void(0)">How many quotes will I receive?</a></li>-->
+              </ul>
+            </div>
+            <!-- ./col --> 
+          </div>
+          <!-- .row -->
+          
+          <hr class="m-top-35 m-bottom-30">
+          <div class="font-16 font-semi-bold m-top-20">Payments</div>
+          <div class="row m-top-20">
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <!--<li class="rcl"><a href="javascript:void(0)">How do I pay freelancers?</a></li>-->
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How much should I pay a freelancer?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How can I pay my freelancers?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How do I enter and update my payment information?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">What is a deliverable?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How do I fund the first deliverable?</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li class="rcl"><a href="javascript:void(0)">How do I monitor the status of my projects? </a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How do I close a job once it has been completed? </a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">What if I have a dispute? </a></li>
+              </ul>
+            </div>
+            <!--<li class="m-top-20 rcl"><a href="javascript:void(0)">What payment system should I use?</a></li>--> 
+            <!-- ./col --> 
+          </div>
+          <!-- .row -->
+          
+          <hr class="m-top-35 m-bottom-30">
+          <div class="font-16 font-semi-bold m-top-20">Account Settings</div>
+          <div class="row m-top-20">
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li class="rcl"><a href="javascript:void(0)">Why do I need to include my location? </a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How do I change my password?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How do I change my email preferences?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How do I delete my account?</a></li>
+              </ul>
+            </div>
+            <!-- ./col --> 
+          </div>
+          <!-- .row -->
+          
+          <hr class="m-top-35 m-bottom-30">
+          <div class="font-16 font-semi-bold m-top-20">Profile</div>
+          <div class="row m-top-20">
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <!--<li class="rcl"><a href="javascript:void(0)">How do I edit my profile?</a></li>-->
+                <li class="rcl"><a href="javascript:void(0)">Why are reviews important?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">Is any of my personal information shown on my profile?</a></li>
+                <!--<li class="m-top-20 rcl"><a href="javascript:void(0)">Can I remain anonymous as a client?</a></li>-->
+              </ul>
+            </div>
+            <!-- ./col -->
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <!--<li class="rcl"><a href="javascript:void(0)">Can freelancers see my contact information?</a></li>-->
+                <li class="rcl"><a href="javascript:void(0)">Who can see my profile?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">What are categories & subcategories? </a></li>
+              </ul>
+            </div>
+            <!-- ./col --> 
+          </div>
+          <!-- .row -->
+          
+          <hr class="m-top-35 m-bottom-30">
+          <div class="font-16 font-semi-bold m-top-20">Trust & Safety</div>
+          <div class="row m-top-20">
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li class="rcl"><a href="javascript:void(0)">What privacy does Outsource.com offer? </a></li>
+                <!--<li class="m-top-20 rcl"><a href="javascript:void(0)">What background check does Outsource.com conduct?</a></li>-->
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">Is my intellectual property safe?</a></li>
+                <li class="m-top-20 rcl"><a href="javascript:void(0)">How do I know my information is safe?</a></li>
+              </ul>
+            </div>
+            <!-- ./col --> 
+          </div>
+          <!-- .row --> 
+        </div>
+        <!-- ./col -->
+        
+        
+        <div class="col-md-4">
+              <div class="grey-bg1 bordered m-top-15 rounded padding-25">
+                <div class="font-21 font-semi-bold">Call Us</div>
+
+                <ul class="list-style-icon icon-lg m-top-10">
+                  <li>
+                    <div class="list-icon paddingT-10"><img src="img/remodel1/FAQs/phone.png" alt=""></div>
+                    <div class="list-content">
+                      We are available by phone
+                      Mon-Fri (9AM - 5PM) PST
+
+                      <p class="m-top-10">
+                        866-784-1265
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="font-21 font-semi-bold m-top-10">Email Us</div>
+
+                <ul class="list-style-icon icon-lg m-top-10">
+                  <li>
+                    <div class="list-icon paddingT-10"><img src="img/remodel1/FAQs/airplane.png" alt=""></div>
+                    <div class="list-content">
+                      You can email us too! We will
+                      respond within one business 
+                      day.
+
+                      <p class="m-top-10">
+                        <a href="mailto:support@outsource.com">support@outsource.com</a>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div><!-- ./bg-dark-grey -->
+
+              <div class="text-center m-top-20"><a href="Freelancer-Resource-Center.html">Click Here</a> for the Freelancer Help Center</div>
+
+              <hr>
+
+              <div class="font-18 font-semi-bold m-left-20">Hiring on Outsource.com</div>
+
+              <p class="line-24 m-top-10 m-left-15">
+                <img src="img/remodel1/FAQs/minion.png" alt="" class="pull-left m-right-10 m-top-10">Save your business time &amp; money by outsourcing your work. Outsource.com connects you with top-quality freelancers that are available to work on your projects.
+              </p>
+            </div>
+        <!-- ./col --> 
+      </div>
+      <!-- ./row --> 
+    </div>
+    <!-- ./container --> 
+  </div>
+  <!-- section --> 
+</div>
+<div style="display:none" class="rca"> <div class="main-container md1-main-cont ">
+<div class="section paddingT-30">
+<div class="container">
+ <div class="row">
+ <div class="col-md-8">
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> What is Outsource.com?</div>
+    <p class="font-16 m-top-20"> Outsource.com is a secure, online marketplace where individuals and businesses can safely and easily outsource their projects, while saving time and money. As a client on Outsource.com, you will be able to post jobs, evaluate freelancer quotes, and find solutions for your business or individual needs. </p>
+  </div>
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How does Outsource.com work? </div>
+    <p class="font-16 m-top-20"> Outsource.com connects you with experienced freelancers that will provide you with business solutions. All you need to do is sign-up, post a job, and you will begin receiving quotes from our talented freelancers. From here, you will evaluate quotes, choose the candidate that is the best fit for your project, as well as set up a payment plan and contract with the freelancer. </p>
+  </div>
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> Why should I use Outsource.com?</div>
+    <p class="font-16 m-top-20"> Outsource.com is a smarter and easier way to outsource your projects and find a freelancer that fits your needs. We will help save you time and money by allowing you to compare, negotiate with, and pay experienced freelancers. Our goal is to provide you with the highest quality freelancers so your project will be completed successfully and on time. </p>
+  </div>
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> What are the benefits of Outsource.com? </div>
+    <p class="font-16 m-top-20"> As a client on Outsource.com, you will have access to a variety of innovative tools to keep the hiring process simple and easy.</p>
+      <div class="sub-header">
+        <italic> Finding Experts </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li> We pride ourselves in offering the most qualified freelancers so you can always find a solution for your business needs. </li>
+      </ul>
+      <div class="sub-header">
+        <italic>Recommended Freelancers </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li> To ease your search, we match you with qualified freelancers who obtain the experience you desire. </li>
+      </ul>
+      <div class="sub-header">
+        <italic>Feedback / Reviews </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li> Read reviews from real people and get an idea of your freelancer's work ethic before the job begins. </li>
+      </ul>
+      <div class="sub-header">
+        <italic> Customer Support </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li> Our customer support team is here when you need it most. We will help you in times of difficulty and get you back on the right path.</li>
+      </ul>
+    </div>
+  
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How do I get started? </div>
+    <p class="font-16 m-top-20">Getting started is quick and simple. </p>
+      <div class="sub-header">
+        <italic> 1) Post your job </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li> Make it a point to articulate your goals, highlight key elements, and emphasize the skills necessary to complete the job successfully. An effective job post with clear goals is your key to success. </li>
+      </ul>
+      <div class="sub-header">
+        <italic>2) Create an account </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li> Enter your name and email address so we can get in contact with you when a freelancer submits a quote. </li>
+      </ul>
+      <div class="sub-header">
+        <italic>3) Begin receiving proposals </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li> Freelancers will send you customized proposals and you can choose the best candidate for the project. </li>
+      </ul>
+    </div>
+  
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> Is Outsource.com available on mobile? </div>
+    <p class="font-16 m-top-20">Outsource.com does not have a mobile application, however our website is mobile user friendly. </p>
+  </div>
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How do I contact customer service? </div>
+    <p class="font-16 m-top-20">We have a great team here at Outsource.com and we would love to hear from you at <a href="mailto:support@outsource.com">support@outsource.com</a> or you can call us at (866) 784-1265. </p>
+      <p> Our support team works hard in order to get you an answer in a timely manner. Please allow up to one business day for a response. </p>
+  </div>
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a>  How much does it cost? </div>
+    <p class="font-16 m-top-20"> Outsource.com is free to sign up and to receive quotes from freelancers.  If you decide to hire a freelancer, there is a 10% service fee added to any payments sent to the freelancer.  The service fee covers transaction costs, hosting fees, dispute assistance if necessary, and creating the best possible experience for you to hire and pay freelancers on the site. </p>
+  </div>
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> What kind of work can I get completed? </div>
+    <p class="font-16 m-top-20">Outsource.com offers a vast pool of talented freelancers, which can help with your business needs. Whether you need support for a long-term or short-term job, our freelancers are experienced and eager to begin working. Their skills and specializations include: </p>
+      <ul class="list-style-dot">
+        <li>
+          <italic> Administrative & Customer Support </italic>
+        </li>
+        <li>
+          <italic> Management, Finance, & Legal </italic>
+        </li>
+        <li>
+          <italic> Sales and Marketing </italic>
+        </li>
+        <li>
+          <italic> Web, Software & IT </italic>
+        </li>
+        <li>
+          <italic> Design, & Media </italic>
+        </li>
+        <li>
+          <italic> Writing & Translation </italic>
+        </li>
+      </ul>
+    </div>
+  
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a>  Are top-skilled freelancers available? </div>
+    <p class="font-16 m-top-20">Absolutely top-skilled freelancers are available on Outsource.com.  You can have the peace of mind knowing that you can always find business solutions on Outsource.com. </p>
+  </div>
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How do I select the best freelancers? </div>
+    <div class="row  col-md-8    help-center-wrapper" >
+      <div class="sub-header">Evaluating a Freelancer</div>
+      <p> Once you have began receiving quotes, it is time to carefully analyze them and select a few candidates that fit the project requirements. The candidates will have different strengths, skillsets, and reviews from previous clients may also vary. This could make the hiring process difficult, so here are a few steps to take to ensure you are selecting the best candidate for the project. </p>
+      <div class="sub-header">1) Carefully Read the Quote</div>
+      <p> A well-written quote should be personalized to fit your specific needs, demonstrates strong knowledge of the subject, suggests a firm understanding of the project's goals, provides a solid outline for their work schedule, and their outline falls within the time frame as well as your overall budget. </p>
+      <div class="sub-header">2) Review their Profile</div>
+      <p> Once you have carefully read the candidate's proposal and made sure they fit your needs, it is now time to review the candidate's profile. Here's what to look for: </p>
+      <ul class="list-style-dot">
+        <li><span class="font-semi-bold">Overview:</span> The overview section should provide a brief background of the freelancer, describe what exactly it is that they do, describe some of the successful projects they have completed, explain the problems in which they can solve, and illustrates the freelancer's ability to effectively communicate their achievements.</li>
+        <li><span class="font-semi-bold">Portfolio:</span> The portfolio allows you to see the freelancer's work firsthand. You can browse through their previous projects to see the quality of their work and if any of it is applicable to your project. </li>
+        <li><span class="font-semi-bold">Skills:</span> Here, you will be able to view all the freelancer's skills and see if they match up with the job requirements. </li>
+        <li><span class="font-semi-bold">Reviews:</span> The review section allows you to read real comments from previous employers and get an idea of the freelancer's ability to successfully complete projects.</li>
+        <li><span class="font-semi-bold">Experience:</span> The experience section allows you to view the jobs the freelancer previously held, certifications they have acquired, and their education.</li>
+      </ul>
+      <p>After you have examined the freelancer's profile and feel as if they are still a great candidate for the job, it is time to set up an interview.</p>
+      <div class="sub-header">3) Contact the freelancers about the job</div>
+      <p> It is important to contact the freelancer if you are interested in hiring them.  We encourage you to follow-up with a few freelancers before deciding who to hire. </p>
+      <ul class="list-style-dot">
+        <li> <span class="font-semi-bold">Ask a few questions</span><br/>
+          Ask each freelancer to answer a few questions for you so that you can get a better understanding of what they can offer you. </li>
+        <li> <span class="font-semi-bold">Setup a call or Skype meeting</span><br/>
+          If necessary, you can setup a time to discuss the project directly with the freelancer.  We especially recommend doing this for larger, more complicated projects. </li>
+        <li> <span class="font-semi-bold">Hire the best freelancer for the job</span><br/>
+          Once you have decided which freelancer you would like to hire, you can discuss with them directly about how to pay them for their work and set-up a schedule. </li>
+      </ul>
+    </div></div>
+  <!--<div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center" class="link-blue no-underline">«</a> How do I hire freelancers? </div>
+        <p class="font-16 m-top-20">Hiring a freelancer is done outside of Outsource.com so you can create a personalized contract for the freelancer. Each project is different, therefore we offer flexibility when creating the contract so you can tailor the terms, conditions, and payment schedule to your specific needs. </p>
+      </div>-->
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> What if I cannot find the freelancer I need? </div>
+    <p class="font-16 m-top-20">As you may already know, it can be difficult to find the right applicant for a given job. Here are a few steps to help if you cannot find the freelancer you need on the first time: </p>
+      <div class="sub-header">
+        <italic> 1) Revise your job post. </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li>Make sure your job post is detailed, the goals are clear, and you are accurately describing the project needing completion. </li>
+      </ul>
+      <div class="sub-header">
+        <italic> 2) Contact us </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li> Outsource.com is here for you along every step of the way. We have certified professionals that can help you get the results you desire. </li>
+      </ul>
+    </div>
+  
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> What if my freelancer is not working out? </div>
+    <p class="font-16 m-top-20">If your project is not going as well as you planned, it may be time to rethink the outcome. </p>
+      <div class="sub-header">
+        <italic> 1) Communicate with your freelancer. </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li>It can be difficult to strictly communicate via email. Sometimes a simple phone call can be the solution to an ongoing issue. Schedule a phone call or a video chat with your freelancer so you can reiterate the goals of the project and make sure you both are on the same page. </li>
+      </ul>
+      <div class="sub-header">
+        <italic> 2) Follow your instincts. </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li> As we mentioned before, you are the only person that knows exactly what is needed for the project to be successful. If those goals are not being met or if you don't feel the freelancer is giving this project their best effort, there is a large pool of freelancers that are willing to work hard and make sure the job will be completed.</li>
+      </ul>
+      
+      <div class="sub-header">
+        <italic> 3) File a dispute. </italic>
+      </div>
+      <ul class="list-style-dot">
+        <li> If you have done the best you can to communicate with your freelancer, and neither one of you is coming to a conclusion, you are able to file a dispute. To file a dispute, go to the Actions dropdown for the relevant job and click to "Dispute the Job".
+</li>
+      </ul>
+      
+      
+    </div>
+  
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a>  How do I write a quality job post? </div>
+    <div class="row  col-md-8    help-center-wrapper" >
+      <div class="sub-header"> Create a Job Post in 3 Steps </div>
+      An attentive and well-developed job post is the best way to attract experienced freelancers. Clearly and concisely describing your job post will increase the quality of proposals you receive and allows freelancers to create custom proposals that fit your needs. Read below for more information on how to create a successful job post.
+      <div class="sub-header">1) Job Title</div>
+      <p>Create a title that is eye-catching, definitive, and uses language which is vital for the position. </p>
+      <div class="sub-header">Bad</div>
+      <ul class="list-style-dot">
+        <li>
+          <italic> Looking for a developer </italic>
+        </li>
+      </ul>
+      <p> Don't do this! It's lifeless, undemanding, and is unspecific. The title sets the mood for the entire job post and you want to make sure you are not leading applicants away from the job post. </p>
+      <div class="sub-header">Good</div>
+      <ul class="list-style-dot">
+        <li>
+          <italic> Python / UNIX Developer for Growing Website </italic>
+        </li>
+        <li>
+          <italic> Social Media Guru / Content Writer for Food Blog</italic>
+        </li>
+      </ul>
+      <p> By creating a distinct job title that is directly related to the project, there will be an increase the quality of the job proposals received. </p>
+      <div class="sub-header">2) Job Description</div>
+      <div> Position </div>
+      <p>Draft a clear and concise description of the position, provide a list of required skills, set up a timeframe for the job, implement a maximum budget, establish work expectations, the type of communication you prefer, include questions for the applicant to answer, and make sure you convey the ultimate goal of the job. Jobs descriptions should be straight-forward, they should describe the applicant's responsibilities, and provide insight into the company so the applicant can fully understand the objective of the project. </p>
+      <p>You should begin receiving proposals within the first few days of the job post. Each job post is different, so you should be more concerned with the quality of the proposals you receive, rather than quantity. If you are not seeing the results you desire, please contact us at support@outsource.com and we will help get you on the right track. </p>
+      <div class="sub-header">3) Additional Details</div>
+      <p> Add anything to your post that might be beneficial or unique in attracting a certain type of freelancer.  If you work in a niche or alternative market, feel free to ask for people who might have a background in what you need accomplished! </p>
+      <p> Try to format your description as professionally as possible and include as much as information as you can; well-written proposals will receive more and better quality proposals from our amazing and talented freelancers. </p>
+  </div> </div>
+  <div class="freelancer-answers">
+    <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How does the hiring process work?</div>
+    <p class="font-16 m-top-20">Once you find a freelancer that you would like to hire, you are able to send an offer with the terms for the job.  This offer will be sent to the freelancer who is then able to either accept or decline the offer, or ask for revisions.  If the freelancer asks for revisions, you will be able to make updates to the offer and re-send it.  Once the offer is accepted by the freelancer, they will be officially hired by you and will begin working. </p> </div>
+    <div class="freelancer-answers">
+      <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> What happens when the freelancer accepts an offer?</div>
+      <p class="font-16 m-top-20">Both parties have now agreed to the terms outlined and defined in the contract. Work can begin on the part of the freelancer and any deliverable has been funded or hourly pay periods can begin to take effect. </p> </div>
+      
+      <!--<div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center" class="link-blue no-underline">«</a> How many quotes will I receive? </div>
+        <p class="font-16 m-top-20">For quality control purposes, we allow clients to receive a maximum of 5 proposals. This allows you to save time, focus on the most qualified candidates, and it also creates a higher demand for your job. </p>
+      </div>--> 
+      <!--<div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center" class="link-blue no-underline">«</a>  How do I pay freelancers? </div>
+        <p class="font-16 m-top-20">At this time, we do not provide a payment system between freelancers and clients. Therefore, all payments are to be completed outside of Outsource.com. This is a feature we are planning to integrate very soon. We recommend requiring part of the payment up front or setting up deliverables so you get paid as the work is completed. </p>
+      </div>-->
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How much should I pay a freelancer? </div>
+        <div class="col-md-8 help-center-wrapper" >
+          <p> Pay rates for all freelance work can vary based on work experience, technical skills, specializations, as well as overall experience. So how do you know if the freelancer is charging you a fair rate? </p>
+          <p>
+          <div class="sub-header">
+            <italic> 1) Look at the freelancers portfolio. </italic>
+          </div>
+          <ul class="list-style-dot">
+            <li> How much experience does the freelancer have? Does the portfolio offer quality work? If so, the job may require a higher rate of pay. </li>
+          </ul>
+          <div class="sub-header">
+            <italic>2) How difficult is the job? </italic>
+          </div>
+          <ul class="list-style-dot">
+            <li>Do you need to hire someone that has a specialized skill? Is this a short term or long term position? How large is the workload? These factors, and many others, may cause the pay rate to fluctuate. </li>
+          </ul>
+          <div class="sub-header">
+            <italic> 3) What is the market rate? </italic>
+          </div>
+          <ul class="list-style-dot">
+            <li> There are many websites that offer a pay scale for similar work. </li>
+          </ul>
+          </p>
+      </div></div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How can I pay my freelancers? </div>
+        <p class="font-16 m-top-20">Outsource.com hosts a payment system wherein Clients can pay freelancers for the work that is completed on Outsource.  How the payments are processed depends on whether the job is setup as fixed-price or hourly.  For fixed-price jobs, the client is able to divide the project into separate deliverables and deposit funds for each deliverable.  The payments will be held by Outsource.com until the work is completed and the Client releases the payments.  For hourly work, the freelancer will enter the hours that they work each week and the Client will be charged on Sunday at Midnight UTC for work completed by the freelancer in the previous week.</p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a>  How do I enter and update my payment information? </div>
+        <p class="font-16 m-top-20">Outsource.com accepts all major credit and debit cards as well as PayPal to pay for work provided by freelancers.  You will be asked to enter a payment method the first time that you send an offer to a client.  You can update your payment method at anytime in the Account Information section. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> What is a deliverable?</div>
+        <p class="font-16 m-top-20">For fixed-price jobs, the work can be divided into deliverables.  A deliverable is a smaller or incremental part of a larger job that a client and a freelancer have agreed to on Outsource.com.  Deliverables are used to gauge the progress of jobs and allow for payment to be made in smaller amounts rather than a lump sum at the completion of a job. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How do I fund the first deliverable? </div>
+        <p class="font-16 m-top-20">Once your offer is sent to the freelancer of your choosing, the first deliverable will automatically be funded should they choose to accept. This is why payment information is necessary before the quote is sent to the freelancer. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How do I monitor the status of my projects? </div>
+        <p class="font-16 m-top-20">It is your responsibility to communicate with the freelancer in order to ensure the work is being completed to your satisfaction.  For hourly jobs, the freelancer will enter a short description whenever adding hours worked. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How do I close a job once it has been completed? </div>
+        <p class="font-16 m-top-20">Once the last scheduled payment has been completed, you can close the job in the project page.  Any outstanding funds that are owed on a job will still be paid to the freelancer.  This will prevent the freelancer from entering any more hours worked for the job and allow you to leave a review for the freelancer. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> What if I have a dispute? </div>
+        <p class="font-16 m-top-20">Should a client become unsatisfied with work completed by a freelancer, they are allowed to open a dispute against the freelancer on Outsource.com </p>
+          <p>Prior to filing a dispute, Outsource.com strongly recommends trying to resolve the issue directly with the freelancer.  To file a dispute, go to the Actions dropdown for the relevant job and click to "Dispute the Job". </p>
+      </div>
+      <!--<div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center" class="link-blue no-underline">«</a> What payment system should I use?</div>
+        <p class="font-16 m-top-20">Outsource.com recommends that you use a protected payment service such as PayPal to ensure your safety. We also recommend requiring part of the payment up front or setting up deliverables so you get paid as the work is completed. </p>
+      </div>-->
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> Why do I need to include my location? </div>
+        <p class="font-16 m-top-20">As a client, your address, city, and state are optional fields. However you must include your timezone as well as the country in which you reside. Outsource.com requires you enter your location for safety purposes. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How do I change my password? </div>
+        <p class="font-16 m-top-20">Changing your password is simple and hassle-free. Once logged into your account, go into your
+            <italic>Account Info</italic>
+            . Choose the
+            <italic>Password Settings</italic>
+            tab and a link with instructions will be sent to your email. </p>
+          <p> If you are locked out of your account, please go to the login page and click the link that says
+            <italic>Reset Password.</italic>
+             From here, we will send you an email with a link to reset your password. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How do I change my email preferences? </div>
+        <p class="font-16 m-top-20">If you are unsatisfied with the emails you receive, you can easily customize your email preferences. To do so, go into your
+            <italic>Account Info,</italic>
+             choose the
+            <italic>Email Notification</italic>
+            tab, and you will be able to customize the emails you receive. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How do I delete my account? </div>
+        <p class="font-16 m-top-20">If you are having any issues with Outsource.com or you would like to deactive your account, please email us at <a href="mailto:support@outsource.com">support@outsource.com</a> with the emaill adress that is associated with your Outsource.com account or contact us by phone at (866) 784-1265. </p>
+      </div>
+      <!--<div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center" class="link-blue no-underline">«</a> How do I edit my profile? </div>
+        <p class="font-16 m-top-20">-</p>
+      </div>-->
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> Why are reviews important? </div>
+        <p class="font-16 m-top-20">Leaving reviews for previous freelancers is important because it helps build their reputation and future clients will be able to see all the reviews left by previous clients. The review section is a great spot to share your experience with the freelancer and whether or not you would recommend the freelancer to other clients. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a>  Is any of my personal information shown on my profile? </div>
+        <p class="font-16 m-top-20">We take your privacy seriously, so we do not display any of your personal information publicly. In order to see what information is displayed, click the
+            <italic> View Job </italic>
+            button displayed in your
+            <italic> My Jobs</italic>
+            folder and you can view exactly what the freelancer sees. If you would like to change the information that is displayed, you can update your account settings or contact us at <a href="mailto:support@outsource.com">support@outsource.com</a>. </p>
+      </div>
+      <!--<div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center" class="link-blue no-underline">«</a> Can I remain anonymous as a client? </div>
+        <p class="font-16 m-top-20">As client, you can remain anonymous to freelancers until you hire a freelancer. The only information displayed your first name along with your last initial. However, hiring and payments are to be completed outside of Outsource.com, so you will need to provide the freelancer with contact information as well as set up a payment system. </p>
+      </div>-->
+      <!--<div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center" class="link-blue no-underline">«</a> Can freelancers see my contact information?</div>
+        <p class="font-16 m-top-20">-</p>
+      </div>-->
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> Who can see my profile? </div>
+        <p class="font-16 m-top-20">Other clients and freelancers will be unable to view your account. Once a job has been posted, a freelancer will only be able to see your first name along with your last initial. Also, the freelancer will only be allowed to contact you through Outsource.com. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a>  What are categories & subcategories? </div>
+        <p class="font-16 m-top-20"> Categories are the different job industries on Outsource.com. In order to get the best results when posting or searching for a job, be sure to be as specific as possible. Categories include: </p>
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td>Admin &amp; Customer Support</td>
+                <td>Management, Finance, &amp; Legal</td>
+                <td>Sales &amp; Marketing</td>
+              </tr>
+              <tr>
+                <td>Software &amp; IT</td>
+                <td>Web, Design, &amp; Media</td>
+                <td>Writing &amp; Translation</td>
+              </tr>
+            </tbody>
+          </table>
+          <p> Subcategories are specific fields within an industry. In order to get the best results when posting or searching for a job, be sure to be as specific as possible. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> What privacy does Outsource.com offer? </div>
+        <p class="font-16 m-top-20">Outsource.com also gives you full access to your account settings so you can choose the information that freelancers will see. </p>
+      </div>
+      <!--<div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center" class="link-blue no-underline">«</a> What background check does Outsource.com conduct?</div>
+        <p class="font-16 m-top-20">- </p>
+      </div>-->
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> Is my intellectual property safe? </div>
+        <p class="font-16 m-top-20">Outsource.com does not guarantee that your intellectual property will be safe or mediate disputes between freelancer and clients. We ask you to use your best judgement and exercise caution when hiring a freelancer. </p>
+      </div>
+      <div class="freelancer-answers">
+        <div class="header-text"><a href="Client-Resource-Center.html" class="link-blue no-underline">«</a> How do I know my information is safe? </div>
+        <p class="font-16 m-top-20">You can have peace of mind knowing Outsource.com does not sell or share your personal information with others. Please see our Privacy Policy for more information about which information is shared and which will never be shared with anyone.</p>
+      </div>
+      
+      <!-- ./col -->
+      </div>
+         <div class="col-md-4" style="float:right !important;">
+              <div class="grey-bg1 bordered m-top-15 rounded padding-25">
+                <div class="font-21 font-semi-bold">Call Us</div>
+
+                <ul class="list-style-icon icon-lg m-top-10">
+                  <li>
+                    <div class="list-icon paddingT-10"><img src="img/remodel1/FAQs/phone.png" alt=""></div>
+                    <div class="list-content">
+                      We are available by phone
+                      Mon-Fri (9AM - 5PM) PST
+
+                      <p class="m-top-10">
+                        866-784-1265
+                      </p>
+                  </li>
+                </ul>
+
+                <div class="font-21 font-semi-bold m-top-10">Email Us</div>
+
+                <ul class="list-style-icon icon-lg m-top-10">
+                  <li>
+                    <div class="list-icon paddingT-10"><img src="img/remodel1/FAQs/airplane.png" alt=""></div>
+                    <div class="list-content">
+                      You can email us too! We will
+                      respond within one business 
+                      day.
+
+                      <p class="m-top-10">
+                        <a href="mailto:support@outsource.com">support@outsource.com</a>
+                      </p>
+                  </li>
+                </ul>
+              </div><!-- ./bg-dark-grey -->
+
+              <div class="text-center m-top-20"><a href="Freelancer-Resource-Center.html">Click Here</a> for the Freelancer Help Center</div>
+
+              <hr>
+
+              <div class="font-18 font-semi-bold m-left-20">Hiring on Outsource.com</div>
+
+              <p class="line-24 m-top-10 m-left-15">
+                <img src="img/remodel1/FAQs/minion.png" alt="" class="pull-left m-right-10 m-top-10">Save your business time &amp; money by outsourcing your work. Outsource.com connects you withtop-quality freelancers that are available to work on your projects.
+              </p>
+        <!-- ./col --> 
+      </div>
+      <!-- ./row --> 
+    </div>
+    <!-- ./container --> 
+  </div>
+  <!-- section --> 
+</div>
+</div>
+<style> 
+    .freelancer-answers{
+    display:none; 
+    }
+    italic
+    {
+    font-style:italic;  
+    }
+        </style>
+ </div>
+
+<!-- Annwsers for the FAQs --> 
+
+<div class="modal fade in" id="repopuplogin" aria-hidden="false"> 
+  <div class="modal-dialog">
+    <div class="modal-content">      
+      <form id="reLoginform" method="post" data-parsley-validate="" action="javascript:loginAgain();" novalidate="">
+        <input type="hidden" name="cmd" value="_regenerate_session">
+        <input type="hidden" name="email" value="">
+        <div class="modal-body">
+        	<h4 class="font-24 font-header">Your Session has timed out.Please login again.</h4>
+          <div class="form-group font-16 m-top-20">
+          <label class="font-normal font-16"> Email Address: </label>&nbsp;<span class="font-semi-bold"></span></div>
+          <div class="form-group has-feedback feedback-left clear">
+            <label class="font-normal">Password: </label>
+            <input type="password" class="form-control custom-input" name="Password" id="upassword" size="35" onclick="password_chk()" onblur="password_blur(this)" onkeyup="password_rem()" data-parsley-group="block1" data-parsley-required-message="The password you entered is invalid" required="" >
+            <span class="fa fa-lock fa-lg form-control-feedback"></span>
+        </div>  
+        <div class="m-top-40 text-right">
+          
+          <button type="button" class="btn btn-md1 btn-main m-right-10" onclick="$('#reLoginform').submit();">Save</button>
+          <button type="button" class="btn btn-md1 btn-decline" data-dismiss="modal">Cancel</button>
+        </div>
+       </div> 
+      </form>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 m-bottom-20-xs">
+					<div class="col-sm-3 no-padding m-bottom-40-xs text-center-xs">
+						<div class="footer-header">Outsource.com</div>
+						<ul class="quick-link list-unstyled m-top-5">
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="terms.html">Terms of Service</a></li>
+							<li><a href="privacy.html">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 no-padding m-bottom-40-xs text-center-xs">
+						<div class="footer-header">Clients</div>
+						<ul class="quick-link list-unstyled m-top-5">
+							<li><a href="how-it-works.html">How it Works</a></li>
+							<li><a href="logindc81.html">Find Freelancers</a></li>
+							<li><a href="Client-Resource-Center.html">Client FAQs</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 no-padding m-bottom-40-xs text-center-xs">
+						<div class="footer-header">Freelancers</div>
+						<ul class="quick-link list-unstyled m-top-5">
+							<li><a href="how-it-works-freelancers.html">How it Works</a></li>
+							<li><a href="login5538.html">Find Jobs</a></li>
+							<li><a href="Freelancer-Resource-Center.html">Freelancer FAQs</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 no-padding m-bottom-40-xs text-center-xs">
+						<div class="footer-header">Contact Us</div>
+						<div class="m-top-5 line-26"><a href="mailto:support@outsource.com">support@outsource.com</a></div>
+						<div class="m-top-5 line-26">or 866-784-1265</div>
+                        <div class="m-top-5 line-26">M-F (9am-5pm) PST</div>
+						<div class="m-top-20">
+							<a href="https://www.facebook.com/Outsourcecom" target="_blank" class="m-right-5"><img src="img/remodel1/footer/Footer-Facebook.png" alt=""  class="footer-social"></a>
+							<a href="https://twitter.com/outsource_com" target="_blank" class="m-right-5"><img src="img/remodel1/footer/Footer-Twitter.png" alt=""  class="footer-social"></a>
+							<a href="https://www.linkedin.com/company/outsource-com" target="_blank" class="m-right-5"><img src="img/remodel1/footer/Footer-LinkedIn.png" alt=""  class="footer-social"></a>
+							<a href="https://plus.google.com/108859184661266890145" target="_blank"><img src="img/remodel1/footer/Footer-GooglePlus.png" alt=""  class="footer-social"></a>
+						</div>
+					</div>
+				</div><!-- ./col -->
+			</div><!-- ./row -->
+
+			<hr>
+
+			<div class="text-center m-top-30">
+				<img src="img/remodel1/footer/logo.png" alt="">
+
+				<div class="m-top-10 font-14">©2015 Outsource.com</div>
+			</div>
+		</div>
+	</footer>
+    <!--Facebook Retargeting Pixel Start-->
+ <script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '../connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '1539363626204779']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1539363626204779&amp;ev=PixelInitialized" /></noscript> 
+  <!--Facebook Retargeting Pixel End-->
+ 
+    
+  <!-- Google Tag Manager -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54804151-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+  </div>
+
+        <div class="modal fade" id="confirmNavigation">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="header-text">Confirm Navigation</div>
+        <p class="font-16 m-top-20 line-24"> Your changes have not been saved.<br>
+          Are you sure want to leave this page? </p>
+        <div class="text-center m-top-30">
+          <button type="button" class="btn btn-md1 btn-main m-right-10 font-12-xs" id="PerformConfirActionId"  onclick="PerformConfirAction()">Stay on this page</button>
+          <button type="button" class="btn btn-md1 btn-decline font-12-xs" onclick="confirmactionSuccess();">Leave this page</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+ 
+     <!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!-- Jquery -->
+<script type="text/javascript">
+var callBackJs = '';
+</script>
+<script src="functions/javascript/custom/jquery-1.10.2.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="functions/javascript/custom/bootstrap.min.js"></script>
+
+
+
+<!-- Slimscroll -->
+<script src='functions/javascript/custom/jquery.slimscroll.min.js'></script>
+
+<!-- Popup Overlay -->
+<script src='functions/javascript/custom/jquery.popupoverlay.min.js'></script>
+
+<!-- Modernizr -->
+<script src='functions/javascript/custom/modernizr.min.js'></script>
+
+<!-- Less js -->
+<script src='functions/javascript/custom/less-1.5.1.min.js'></script>
+
+<!-- Cookie -->
+<script src='functions/javascript/custom/jquery.cookie.min.js'></script>
+
+<!-- Outsource -->
+<script src="functions/javascript/custom/outsource.js"></script>
+
+<!-- Outsource -->
+<script src="functions/javascript/custom/jform.js"></script>
+
+<script  type="text/javascript" src="functions/javascript/common.js" charset="utf-8"></script>
+<script  type="text/javascript" src="functions/javascript/custom/parsley.js" charset="utf-8"></script>
+
+<script src="functions/javascript/custom/footer.js"></script>
+<script  type="text/javascript" src="functions/javascript/custom/select2.js" charset="utf-8"></script>
+<!--<div class="grey-bg1 full-height"></div>-->
+  <script>
+  $('.main-container').append('<div class="dummydom"></div>'); 
+  var isgreybg = $('.dummydom').prev('.section').find('div:first').attr("class");
+   if(isgreybg =='grey-bg1' ||  $('.dummydom').prev('.section').hasClass('grey-bg1'))
+   {
+   $('.dummydom').addClass("grey-bg1 full-height");
+   $('.dummydom').prev('.section').find('.grey-bg1').removeClass('bordered-bottom');
+   }  
+   </script>
+   
+   <script>
+//select box desing update
+if($('select').hasClass('form-control'))
+{
+$("select:not([multiple])").addClass('new-selectbox');
+$(".new-selectbox").removeClass('form-control');
+$(".new-selectbox").select2({
+		    	minimumResultsForSearch: -1
+		    });
+}
+</script>
+
+<script type="text/javascript">
+ 
+ var verificationtext = '';
+ if(verificationtext > 0)
+ {
+ if(verificationtext == 1)
+ {
+ $('.main-container').prepend('<div class="container verification-text">Please verify your email address so that we can post your jobs. Need us to resend the verification email? <a  onclick="verify_ajax()" href="javascript:void(0)">Click here</a></div>');
+ }
+ else  if(verificationtext == 2)
+  {
+ $('.main-container').prepend('<div class="container verification-text">Please verify your email address so that you can apply to jobs. Need us to resend the verification email? <a  onclick="verify_ajax()" href="javascript:void(0)">Click here</a></div>');
+ }
+ }
+ 
+  function verify_ajax()
+ {
+		
+ $('#overlay').fadeIn(800);
+ var params = { cmd : 'verify_email' };
+  // console.log(params);
+   $.ajax({
+			type : 'POST',
+			url  : 'jobs_ajax.php',
+			data : params,
+			dataType : 'json',
+			success  : function(data)
+			{
+				$('#overlay').fadeOut(800);
+				console.log(data);
+				if(data.error)
+				{
+					
+					
+					alert(data.warning);
+				}
+				else
+				{
+				   if(data.page !='' && data.page !='undefined')
+				   reloadToPage(data.page);
+				  
+				}
+			}
+		});		
+	  
+ }
+</script>
+
+
+ 
+     <script>  
+     $('.rcl').each( function()
+     { 
+	 var indexs = $(this).index('.rcl');
+	 var hrefurl = ILBASE+'Client-Resource-Center?pos='+indexs;
+	 $(this).find('a').attr('href',hrefurl);
+	 })
+	 
+    /* $('.rcl').on('click', function()
+     {      
+     var indexs = $(this).index('.rcl');
+     window.location = ILBASE+'Client-Resource-Center?pos='+indexs;
+      });*/
+     
+     var lipos = '';
+     //alert(lipos);
+     if(lipos != '')
+     {
+     $('.freelancer-help-centerlist').hide();
+     $('.brudgrunupdate').html($('.freelancer-help-centerlist li' ).eq( lipos ).find('a').html());
+     $('.rca').show();
+     $( ".freelancer-answers" ).eq( lipos ).show(); 
+       
+     }
+     
+     </script>
+          <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c57cead1ee","applicationID":"5288246","transactionName":"b1YEZUJVXBZZVE1YDFYcM0NZG1EJUVJXRTxQVgpBb1dXC0xSSx8TUEM=","queueTime":0,"applicationTime":66,"atts":"QxEHEwpPTxg=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script></body>
+
+
+<!-- Mirrored from www.outsource.com/Client-Resource-Center by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Oct 2015 14:44:58 GMT -->
+</html> 
